@@ -139,7 +139,7 @@
     "peer_speed_rule": ".//tr/td[5]/nobr/text()",
     "remark": "",
     "invitation_rule": "//a[contains(@href,\"invite.php?id=\")]/following-sibling::text()[1]",
-    "time_join_rule": "//td[contains(text(),\"加入\")]/following-sibling::td[1]//span/@title",
+    "time_join_rule": "//td[contains(text(),\"加入\")]/following-sibling::td[1]/text()",
     "latest_active_rule": "//td[contains(text(),\"最近动向\")]/following-sibling::td[1]//span/@title",
     "uploaded_rule": "//font[@class=\"color_uploaded\"]/following-sibling::text()[1]",
     "downloaded_rule": "//font[@class=\"color_downloaded\"]/following-sibling::text()[1]",
