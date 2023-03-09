@@ -2107,40 +2107,44 @@ class PtSpider:
                 # logger.info('注册时间：', time_join_1)
                 # time_join = time_join_1.replace('(', '').replace(')', '').strip('\xa0').strip()
                 logger.info(f'注册时间：{details_html.xpath(site.time_join_rule)}')
-                if site.url in [
-                    'https://monikadesign.uk/',
-                    'https://pt.hdpost.top/',
-                    'https://reelflix.xyz/',
-                ]:
-                    time_str = ''.join(details_html.xpath(site.time_join_rule))
-                    time_str = re.sub(u"[\u4e00-\u9fa5]", "", time_str).strip()
-                    time_join = datetime.strptime(time_str, '%b %d %Y')
-                    logger.info(f'注册时间：{time_join}')
-                    my_site.time_join = time_join
-                elif 'hd-torrents.org' in site.url:
-                    time_join = datetime.strptime(''.join(details_html.xpath(site.time_join_rule)), '%d/%m/%Y %H:%M:%S')
-                    my_site.time_join = time_join
-                elif site.url in [
-                    'https://piggo.me/',
-                ]:
-                    time_str = ''.join(details_html.xpath(site.time_join_rule))
-                    time_str = time_str.split('(')[0]
-                    print(time_str)
-                    time_join = datetime.strptime(time_str.strip(), '%Y-%m-%d %H:%M:%S')
-                    my_site.time_join = time_join
-                elif site.url in [
-                    'https://exoticaz.to/',
-                    'https://cinemaz.to/',
-                    'https://avistaz.to/',
-                ]:
-                    time_str = ''.join(details_html.xpath(site.time_join_rule)).split('(')[0].strip()
-                    time_join = datetime.strptime(time_str, '%d %b %Y %I:%M %p')
-                    my_site.time_join = time_join
-                else:
-                    time_join = re.findall(r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}', ''.join(
-                        details_html.xpath(site.time_join_rule)
-                    ).strip())
-                    my_site.time_join = ''.join(time_join)
+                try:
+                    if site.url in [
+                        'https://monikadesign.uk/',
+                        'https://pt.hdpost.top/',
+                        'https://reelflix.xyz/',
+                    ]:
+                        time_str = ''.join(details_html.xpath(site.time_join_rule))
+                        time_str = re.sub(u"[\u4e00-\u9fa5]", "", time_str).strip()
+                        time_join = datetime.strptime(time_str, '%b %d %Y')
+                        logger.info(f'注册时间：{time_join}')
+                        my_site.time_join = time_join
+                    elif 'hd-torrents.org' in site.url:
+                        time_join = datetime.strptime(''.join(details_html.xpath(site.time_join_rule)),
+                                                      '%d/%m/%Y %H:%M:%S')
+                        my_site.time_join = time_join
+                    elif site.url in [
+                        'https://piggo.me/',
+                    ]:
+                        time_str = ''.join(details_html.xpath(site.time_join_rule))
+                        time_str = time_str.split('(')[0]
+                        print(time_str)
+                        time_join = datetime.strptime(time_str.strip(), '%Y-%m-%d %H:%M:%S')
+                        my_site.time_join = time_join
+                    elif site.url in [
+                        'https://exoticaz.to/',
+                        'https://cinemaz.to/',
+                        'https://avistaz.to/',
+                    ]:
+                        time_str = ''.join(details_html.xpath(site.time_join_rule)).split('(')[0].strip()
+                        time_join = datetime.strptime(time_str, '%d %b %Y %I:%M %p')
+                        my_site.time_join = time_join
+                    else:
+                        time_join = re.findall(r'\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}', ''.join(
+                            details_html.xpath(site.time_join_rule)
+                        ).strip())
+                        my_site.time_join = ''.join(time_join)
+                except Exception as e:
+                    self.send_text(title='ptools提醒', message=f'{site.name} 注册时间解析错误！')
                 # 去除字符串中的中文
                 my_level_1 = ''.join(
                     details_html.xpath(site.my_level_rule)
