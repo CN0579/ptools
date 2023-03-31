@@ -64,11 +64,11 @@ def auto_get_status():
     """
     start = time.time()
     message_list = '# 更新个人数据  \n\n'
-    queryset = MySite.objects.all()
-    site_list = [my_site for my_site in queryset if my_site.site.get_userinfo_support]
-    results = pool.map(pt_spider.send_status_request, site_list)
+    queryset = MySite.objects.filter(site__get_userinfo_support=True).filter(get_info=True).all()
+    # site_list = [my_site for my_site in queryset if my_site.site.get_userinfo_support and my_site.get_info]
+    results = pool.map(pt_spider.send_status_request, queryset)
     message_template = MessageTemplate.status_message_template
-    for my_site, result in zip(site_list, results):
+    for my_site, result in zip(queryset, results):
         if result.code == StatusCodeEnum.OK.code:
             res = pt_spider.parse_status_html(my_site, result.data)
             logger.info('自动更新个人数据: {}, {}'.format(my_site.site, res))
