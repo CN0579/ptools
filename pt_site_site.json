@@ -2,7 +2,7 @@
   {
     "id": 1,
     "created_at": "2022-07-17 10:22:03.474000",
-    "updated_at": "2023-04-02 00:49:07.827887",
+    "updated_at": "2023-04-19 22:59:55.532595",
     "name": "阿童木",
     "url": "https://hdatmos.club/",
     "logo": "https://hdatmos.club/favicon.ico",
@@ -66,7 +66,7 @@
     "leech_rule": "//img[@class=\"arrowdown\"][1]/following-sibling::text()[1]",
     "seed_rule": "//img[@class=\"arrowup\"][1]/following-sibling::text()[1]",
     "record_count_rule": "/html/body/b/text()",
-    "seed_vol_rule": "//p/preceding-sibling::text()[1]",
+    "seed_vol_rule": "//p/preceding-sibling::div/div/text()[1]",
     "mailbox_rule": "//a[@href=\"messages.php\"]/font[contains(text(),\"条\")]/text()[1]",
     "hash_rule": "//tr[10]//td[@class=\"no_border_wide\"][2]/text()",
     "notice_rule": "//a[@href=\"index.php\"]/font/text()[1]",
@@ -83,12 +83,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 2,
     "created_at": "2022-07-17 10:24:21.376000",
-    "updated_at": "2023-04-02 00:49:07.834249",
+    "updated_at": "2023-04-19 22:57:41.709424",
     "name": "猪猪网",
     "url": "https://piggo.me/",
     "logo": "https://piggo.me/favicon.ico",
@@ -169,12 +170,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 5,
     "created_at": "2022-07-17 10:27:30.380000",
-    "updated_at": "2023-04-02 00:49:07.839594",
+    "updated_at": "2023-04-19 23:00:30.408120",
     "name": "1PT",
     "url": "https://1ptba.com/",
     "logo": "https://1ptba.com/favicon.ico",
@@ -238,7 +240,7 @@
     "leech_rule": "//img[@class=\"arrowdown\"][1]/following-sibling::text()[1]",
     "seed_rule": "//img[@class=\"arrowup\"][1]/following-sibling::text()[1]",
     "record_count_rule": "/html/body/b/text()",
-    "seed_vol_rule": "//p/preceding-sibling::text()[1]",
+    "seed_vol_rule": "//p/preceding-sibling::div/div/text()[1]",
     "mailbox_rule": "//a[@href=\"messages.php\"]/font[contains(text(),\"条\")]/text()[1]",
     "hash_rule": "//tr[13]/td[2]/table/tbody/tr/td[1]/text()",
     "notice_rule": "//a[@href=\"index.php\"]/font[contains(text(),\"条\")]/text()[1]",
@@ -255,12 +257,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 8,
     "created_at": "2022-07-20 10:05:03.493000",
-    "updated_at": "2023-04-02 00:49:07.845550",
+    "updated_at": "2023-04-19 22:57:41.716684",
     "name": "CarPT",
     "url": "https://carpt.net/",
     "logo": "https://carpt.net/favicon.ico",
@@ -341,12 +344,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 9,
     "created_at": "2022-07-20 10:06:16.029000",
-    "updated_at": "2023-04-02 00:49:07.850906",
+    "updated_at": "2023-04-19 22:57:41.721266",
     "name": "HDArea",
     "url": "https://www.hdarea.co/",
     "logo": "https://www.hdarea.co/favicon.ico",
@@ -427,12 +431,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 10,
     "created_at": "2022-07-20 10:07:13.505000",
-    "updated_at": "2023-04-02 00:49:07.856481",
+    "updated_at": "2023-04-19 22:57:41.725745",
     "name": "红豆饭",
     "url": "https://hdfans.org/",
     "logo": "https://hdfans.org/favicon.ico",
@@ -513,12 +518,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 11,
     "created_at": "2022-07-20 10:08:12.726000",
-    "updated_at": "2023-04-02 00:49:07.862411",
+    "updated_at": "2023-04-19 22:57:41.729226",
     "name": "天空",
     "url": "https://hdsky.me/",
     "logo": "https://hdsky.me/favicon.ico",
@@ -599,12 +605,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 12,
     "created_at": "2022-07-20 10:09:18.723000",
-    "updated_at": "2023-04-02 00:49:07.867710",
+    "updated_at": "2023-04-19 22:57:41.733319",
     "name": "时光",
     "url": "https://hdtime.org/",
     "logo": "https://hdtime.org/favicon.ico",
@@ -685,12 +692,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 13,
     "created_at": "2022-07-20 10:09:59.938000",
-    "updated_at": "2023-04-02 00:49:07.874498",
+    "updated_at": "2023-04-19 22:57:41.736752",
     "name": "Zone",
     "url": "https://hdzone.me/",
     "logo": "https://hdzone.me/favicon.ico",
@@ -771,12 +779,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 14,
     "created_at": "2022-07-20 10:11:12.180000",
-    "updated_at": "2023-04-02 00:49:07.882050",
+    "updated_at": "2023-04-19 23:01:01.183539",
     "name": "冬樱",
     "url": "https://wintersakura.net/",
     "logo": "https://wintersakura.net/favicon.ico",
@@ -840,7 +849,7 @@
     "leech_rule": "//img[@class=\"arrowdown\"][1]/following-sibling::text()[1]",
     "seed_rule": "//img[@class=\"arrowup\"][1]/following-sibling::text()[1]",
     "record_count_rule": "/html/body/b/text()",
-    "seed_vol_rule": "//p/preceding-sibling::text()[1]",
+    "seed_vol_rule": "//p/preceding-sibling::div/div/text()[1]",
     "mailbox_rule": "//a[@href=\"messages.php\"]/font[contains(text(),\"条\")]/text()[1]",
     "hash_rule": "//tr[13]/td[2]/table/tbody/tr/td[1]/text()",
     "notice_rule": "//a[@href=\"index.php\"]/font[contains(text(),\"条\")]/text()[1]",
@@ -857,12 +866,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 15,
     "created_at": "2022-07-20 10:12:13.107000",
-    "updated_at": "2023-04-02 00:49:07.889092",
+    "updated_at": "2023-04-19 22:57:41.745277",
     "name": "蚂蚁",
     "url": "http://hdmayi.com/",
     "logo": "http://hdmayi.com/favicon.ico",
@@ -943,12 +953,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 16,
     "created_at": "2022-07-20 10:13:15.407000",
-    "updated_at": "2023-04-02 00:49:07.896892",
+    "updated_at": "2023-04-19 22:57:41.749806",
     "name": "农场",
     "url": "https://pt.0ff.cc/",
     "logo": "https://pt.0ff.cc/favicon.ico",
@@ -1029,12 +1040,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 17,
     "created_at": "2022-07-20 10:15:59.584000",
-    "updated_at": "2023-04-02 00:49:07.904413",
+    "updated_at": "2023-04-19 22:57:41.754174",
     "name": "铂金学院",
     "url": "https://ptchina.org/",
     "logo": "https://ptchina.org/favicon.ico",
@@ -1115,12 +1127,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 18,
     "created_at": "2022-07-20 10:58:58.928000",
-    "updated_at": "2023-04-02 00:49:07.912492",
+    "updated_at": "2023-04-19 22:57:41.758569",
     "name": "马杀鸡",
     "url": "https://pt.msg.vg/",
     "logo": "https://pt.msg.vg/favicon.ico",
@@ -1201,12 +1214,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 19,
     "created_at": "2022-07-20 11:03:57.583000",
-    "updated_at": "2023-04-02 00:49:07.920975",
+    "updated_at": "2023-04-19 22:57:41.762332",
     "name": "时间",
     "url": "https://www.pttime.org/",
     "logo": "https://www.pttime.org/favicon.ico",
@@ -1287,12 +1301,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 20,
     "created_at": "2022-07-20 11:06:11.901000",
-    "updated_at": "2023-04-02 00:49:07.929909",
+    "updated_at": "2023-04-19 22:57:41.765162",
     "name": "欧申",
     "url": "http://www.oshen.win/",
     "logo": "http://www.oshen.win/favicon.ico",
@@ -1373,12 +1388,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 21,
     "created_at": "2022-07-20 11:12:51.331000",
-    "updated_at": "2023-04-02 00:49:07.935892",
+    "updated_at": "2023-04-19 22:57:41.768206",
     "name": "海棠",
     "url": "https://www.htpt.cc/",
     "logo": "https://www.htpt.cc/favicon.ico",
@@ -1459,12 +1475,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 22,
     "created_at": "2022-07-20 11:17:25.992000",
-    "updated_at": "2023-04-02 00:49:07.943405",
+    "updated_at": "2023-04-19 22:57:41.772734",
     "name": "烧包",
     "url": "https://ptsbao.club/",
     "logo": "https://ptsbao.club/favicon.ico",
@@ -1545,12 +1562,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 23,
     "created_at": "2022-07-20 11:25:55.869000",
-    "updated_at": "2023-04-02 00:49:07.952118",
+    "updated_at": "2023-04-19 22:57:41.776979",
     "name": "百川",
     "url": "https://www.hitpt.com/",
     "logo": "https://www.hitpt.com/favicon.ico",
@@ -1631,12 +1649,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 24,
     "created_at": "2022-07-20 11:27:42.866000",
-    "updated_at": "2023-04-02 00:49:07.964709",
+    "updated_at": "2023-04-19 22:57:41.780195",
     "name": "聆音",
     "url": "https://pt.soulvoice.club/",
     "logo": "https://pt.soulvoice.club/favicon.ico",
@@ -1717,12 +1736,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 25,
     "created_at": "2022-07-20 11:28:54.234000",
-    "updated_at": "2023-04-02 00:49:07.974218",
+    "updated_at": "2023-04-19 22:57:41.782801",
     "name": "备胎",
     "url": "https://www.beitai.pt/",
     "logo": "https://www.beitai.pt/favicon.ico",
@@ -1803,12 +1823,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 26,
     "created_at": "2022-07-20 23:48:14.437000",
-    "updated_at": "2023-04-02 00:49:07.981780",
+    "updated_at": "2023-04-19 22:57:41.785343",
     "name": "观众",
     "url": "https://audiences.me/",
     "logo": "https://audiences.me/favicon.ico",
@@ -1889,12 +1910,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 28,
     "created_at": "2022-07-20 23:51:03.848000",
-    "updated_at": "2023-04-02 00:49:07.988419",
+    "updated_at": "2023-04-19 22:57:41.787731",
     "name": "丐帮",
     "url": "https://gainbound.net/",
     "logo": "https://gainbound.net/favicon.ico",
@@ -1975,12 +1997,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 29,
     "created_at": "2022-07-20 23:51:54.709000",
-    "updated_at": "2023-04-02 00:49:07.996299",
+    "updated_at": "2023-04-19 22:57:41.790235",
     "name": "海胆",
     "url": "https://www.haidan.video/",
     "logo": "https://www.haidan.video/public/pic/favicon.ico",
@@ -2061,12 +2084,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 30,
     "created_at": "2022-07-20 23:52:34.568000",
-    "updated_at": "2023-04-02 00:49:08.003268",
+    "updated_at": "2023-04-19 22:57:41.792601",
     "name": "HD杜比",
     "url": "https://www.hddolby.com/",
     "logo": "https://gitee.com/ngfchl/icons/raw/master/pt_site/hddolby.ico",
@@ -2147,12 +2171,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 31,
     "created_at": "2022-07-20 23:53:30.271000",
-    "updated_at": "2023-04-02 00:49:08.013210",
+    "updated_at": "2023-04-19 22:57:41.794964",
     "name": "海带",
     "url": "https://www.hd.ai/",
     "logo": "https://www.hd.ai/favicon.png",
@@ -2233,12 +2258,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 32,
     "created_at": "2022-07-20 23:55:26.251000",
-    "updated_at": "2023-04-02 00:49:08.023158",
+    "updated_at": "2023-04-19 22:57:41.797361",
     "name": "MTeam",
     "url": "https://kp.m-team.cc/",
     "logo": "https://kp.m-team.cc/favicon.ico",
@@ -2319,12 +2345,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 33,
     "created_at": "2022-07-20 23:56:40.615000",
-    "updated_at": "2023-04-02 00:49:08.034320",
+    "updated_at": "2023-04-19 22:57:41.799874",
     "name": "芒果",
     "url": "https://www.3wmg.com/",
     "logo": "https://www.3wmg.com/favicon.ico",
@@ -2405,12 +2432,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 34,
     "created_at": "2022-07-23 19:05:57.166000",
-    "updated_at": "2023-04-02 00:49:08.043664",
+    "updated_at": "2023-04-19 22:57:41.802346",
     "name": "海豹GPW",
     "url": "https://greatposterwall.com/",
     "logo": "https://greatposterwall.com/favicon.ico",
@@ -2491,12 +2519,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 35,
     "created_at": "2022-07-23 19:10:24.853000",
-    "updated_at": "2023-04-02 00:49:08.050709",
+    "updated_at": "2023-04-19 22:57:41.804666",
     "name": "白兔hares",
     "url": "https://club.hares.top/",
     "logo": "https://club.hares.top/favicon.ico",
@@ -2577,12 +2606,13 @@
     "notice_title": "//div[@class=\"home_Announcement\"]/span[1]",
     "notice_content": "//div[@class=\"home_Announcement\"]/span/following-sibling::div/div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 36,
     "created_at": "2022-07-27 12:59:12.234000",
-    "updated_at": "2023-04-02 00:49:08.057279",
+    "updated_at": "2023-04-19 22:57:41.807142",
     "name": "老师",
     "url": "https://www.nicept.net/",
     "logo": "https://www.nicept.net/favicon.ico",
@@ -2663,12 +2693,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 38,
     "created_at": "2022-08-02 10:14:26.854000",
-    "updated_at": "2023-04-02 00:49:08.063572",
+    "updated_at": "2023-04-19 22:57:41.809633",
     "name": "明教",
     "url": "https://hdpt.xyz/",
     "logo": "https://hdpt.xyz/favicon.ico",
@@ -2749,12 +2780,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 39,
     "created_at": "2022-08-12 23:29:07.033000",
-    "updated_at": "2023-04-02 00:49:08.068790",
+    "updated_at": "2023-04-19 22:57:41.812731",
     "name": "铂金家",
     "url": "https://pthome.net/",
     "logo": "https://pthome.net/favicon.ico",
@@ -2835,12 +2867,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 40,
     "created_at": "2022-08-14 09:14:51.194000",
-    "updated_at": "2023-04-02 00:49:08.096034",
+    "updated_at": "2023-04-19 22:57:41.816656",
     "name": "ipt",
     "url": "https://iptorrents.com/",
     "logo": "https://iptorrents.com/favicon.ico",
@@ -2921,12 +2954,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 41,
     "created_at": "2022-08-18 00:39:11.082000",
-    "updated_at": "2023-04-02 00:49:08.101974",
+    "updated_at": "2023-04-19 22:57:41.819691",
     "name": "梓喵",
     "url": "https://azusa.wiki/",
     "logo": "https://azusa.wiki/favicon.ico",
@@ -3007,12 +3041,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 42,
     "created_at": "2022-08-18 00:46:55.688000",
-    "updated_at": "2023-04-02 00:49:08.107277",
+    "updated_at": "2023-04-19 22:57:41.823428",
     "name": "HD城市",
     "url": "https://hdcity.city/",
     "logo": "https://hdcity.city/favicon.ico",
@@ -3093,12 +3128,13 @@
     "notice_title": "//div[@class=\"block\"][1]/div[@class=\"blocktitle\"]/a",
     "notice_content": "//div[@class=\"block\"][1]/div[@class=\"blocktitle\"]/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 43,
     "created_at": "2022-08-19 23:20:30.164000",
-    "updated_at": "2023-04-02 00:49:08.112589",
+    "updated_at": "2023-04-19 22:57:41.828033",
     "name": "HDVIDEO",
     "url": "https://hdvideo.one/",
     "logo": "https://hdvideo.one/favicon.ico",
@@ -3179,12 +3215,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 44,
     "created_at": "2022-08-23 16:41:38.669000",
-    "updated_at": "2023-04-02 00:49:08.118370",
+    "updated_at": "2023-04-19 23:01:33.927454",
     "name": "月月Frds",
     "url": "https://pt.keepfrds.com/",
     "logo": "https://pt.keepfrds.com/favicon.ico",
@@ -3240,7 +3277,7 @@
     "uploaded_rule": "//font[@class=\"color_uploaded\"]/following-sibling::text()[1]",
     "downloaded_rule": "//font[@class=\"color_downloaded\"]/following-sibling::text()[1]",
     "ratio_rule": "//font[@class=\"color_ratio\"][1]/following-sibling::text()[1]",
-    "my_sp_rule": "//a[@href=\"mybonus.php\"]/following-sibling::text()[1]",
+    "my_sp_rule": "//a[contains(@href,\"mybonus.php\")]/following-sibling::text()[1]",
     "hour_sp_rule": "//div[contains(text(),\"每小时能获取\")]/text()[1]",
     "my_bonus_rule": "//font[@class=\"color_bonus\" and contains(text(),\"积分\")]/following-sibling::text()[1]",
     "my_level_rule": "//span[@class=\"medium\"]/span[@class=\"nowrap\"][1]/a[contains(@class,\"_Name\")]/@class",
@@ -3265,12 +3302,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 45,
     "created_at": "2022-08-26 20:52:18.452000",
-    "updated_at": "2023-04-02 00:49:08.123601",
+    "updated_at": "2023-04-19 22:57:41.836355",
     "name": "U2",
     "url": "https://u2.dmhy.org/",
     "logo": "https://u2.dmhy.org/favicon.ico",
@@ -3351,12 +3389,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 46,
     "created_at": "2022-08-26 20:53:50.259000",
-    "updated_at": "2023-04-02 00:49:08.129262",
+    "updated_at": "2023-04-19 22:57:41.840820",
     "name": "TTG",
     "url": "https://totheglory.im/",
     "logo": "https://totheglory.im/favicon.ico",
@@ -3437,12 +3476,13 @@
     "notice_title": "//td[@class=\"text\"]/ul/li",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 47,
     "created_at": "2022-08-26 20:54:35.357000",
-    "updated_at": "2023-04-02 00:49:08.134809",
+    "updated_at": "2023-04-19 22:57:41.846050",
     "name": "蝶粉",
     "url": "https://discfan.net/",
     "logo": "https://discfan.net/favicon.ico",
@@ -3523,12 +3563,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 48,
     "created_at": "2022-08-26 20:55:42.110000",
-    "updated_at": "2023-04-02 00:49:08.140354",
+    "updated_at": "2023-04-19 22:57:41.849748",
     "name": "joyhd",
     "url": "https://www.joyhd.net/",
     "logo": "https://www.joyhd.net/favicon.ico",
@@ -3609,12 +3650,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 49,
     "created_at": "2022-08-27 17:32:01.405000",
-    "updated_at": "2023-04-02 00:49:08.145921",
+    "updated_at": "2023-04-19 22:57:41.853866",
     "name": "彩虹岛",
     "url": "https://chdbits.co/",
     "logo": "https://chdbits.co/favicon.ico",
@@ -3695,12 +3737,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 50,
     "created_at": "2022-08-27 17:36:00.453000",
-    "updated_at": "2023-04-02 00:49:08.151388",
+    "updated_at": "2023-04-19 22:57:41.858195",
     "name": "好多油",
     "url": "https://pt.hdupt.com/",
     "logo": "https://pt.hdupt.com/favicon.ico",
@@ -3781,12 +3824,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 51,
     "created_at": "2022-08-27 17:43:57.903000",
-    "updated_at": "2023-04-02 00:49:08.157318",
+    "updated_at": "2023-04-19 22:57:41.861998",
     "name": "我堡",
     "url": "https://ourbits.club/",
     "logo": "https://ourbits.club/favicon.ico",
@@ -3867,12 +3911,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 52,
     "created_at": "2022-08-27 18:16:09.224000",
-    "updated_at": "2023-04-02 00:49:08.162706",
+    "updated_at": "2023-04-19 22:57:41.866553",
     "name": "家园",
     "url": "https://hdhome.org/",
     "logo": "https://hdhome.org/favicon.ico",
@@ -3953,12 +3998,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 53,
     "created_at": "2022-08-27 18:18:44.023000",
-    "updated_at": "2023-04-02 00:49:08.168261",
+    "updated_at": "2023-04-19 22:57:41.870529",
     "name": "不可说",
     "url": "https://springsunday.net/",
     "logo": "https://springsunday.net/favicon.ico",
@@ -4039,12 +4085,13 @@
     "notice_title": "//td[@class=\"text\"]/div/div/a",
     "notice_content": "//td[@class=\"text\"]/div/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 54,
     "created_at": "2022-08-27 18:24:32.917000",
-    "updated_at": "2023-04-02 00:49:08.173823",
+    "updated_at": "2023-04-19 22:57:41.874619",
     "name": "OpenCD",
     "url": "https://www.open.cd/",
     "logo": "https://www.open.cd/favicon.ico",
@@ -4125,12 +4172,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 55,
     "created_at": "2022-08-27 21:57:23.449000",
-    "updated_at": "2023-04-02 00:49:08.179501",
+    "updated_at": "2023-04-19 22:57:41.878895",
     "name": "这是猫站",
     "url": "https://pterclub.com/",
     "logo": "https://pterclub.com/favicon.ico",
@@ -4211,12 +4259,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 56,
     "created_at": "2022-08-27 21:57:47.858000",
-    "updated_at": "2023-04-02 00:49:08.185284",
+    "updated_at": "2023-04-19 22:57:41.882302",
     "name": "柠檬",
     "url": "https://lemonhd.org/",
     "logo": "https://lemonhd.org/favicon.ico",
@@ -4297,12 +4346,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 57,
     "created_at": "2022-08-27 21:58:11.379000",
-    "updated_at": "2023-04-02 00:49:08.190654",
+    "updated_at": "2023-04-19 22:57:41.886208",
     "name": "南洋",
     "url": "https://nanyangpt.com/",
     "logo": "https://nanyangpt.com/favicon.ico",
@@ -4383,12 +4433,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 58,
     "created_at": "2022-09-03 00:08:20.078000",
-    "updated_at": "2023-04-02 00:49:08.196057",
+    "updated_at": "2023-04-19 22:57:41.889650",
     "name": "吐鲁番",
     "url": "https://pt.eastgame.org/",
     "logo": "https://pt.eastgame.org/favicon.ico",
@@ -4469,12 +4520,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 59,
     "created_at": "2022-09-14 08:33:16.574000",
-    "updated_at": "2023-04-02 00:49:08.222095",
+    "updated_at": "2023-04-19 22:57:41.893175",
     "name": "KamePT",
     "url": "https://kamept.com/",
     "logo": "https://kamept.com/favicon.ico",
@@ -4555,12 +4607,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 62,
     "created_at": "2022-07-27 13:01:11.697000",
-    "updated_at": "2023-04-02 00:49:08.230100",
+    "updated_at": "2023-04-19 22:57:41.896452",
     "name": "艾薇",
     "url": "http://avgv.cc/",
     "logo": "http://avgv.cc/favicon.ico",
@@ -4641,12 +4694,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 63,
     "created_at": "2022-09-19 22:02:22.069000",
-    "updated_at": "2023-04-02 00:49:08.235615",
+    "updated_at": "2023-04-19 22:57:41.900047",
     "name": "憨憨",
     "url": "https://hhanclub.top/",
     "logo": "https://hhanclub.top/favicon.ico",
@@ -4727,12 +4781,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 64,
     "created_at": "2022-10-04 10:55:26.478000",
-    "updated_at": "2023-04-02 00:49:08.240653",
+    "updated_at": "2023-04-19 22:57:41.903390",
     "name": "瓷器",
     "url": "https://hdchina.org/",
     "logo": "https://hdchina.org/favicon.ico",
@@ -4813,12 +4868,13 @@
     "notice_title": "//div[@class=\"announcebox\"]/div/h4",
     "notice_content": "//div[@class=\"announcebox\"]/div/h4/following-sibling::h3",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 65,
     "created_at": "2022-10-04 11:03:31.325000",
-    "updated_at": "2023-04-02 00:49:08.246603",
+    "updated_at": "2023-04-19 22:57:41.906957",
     "name": "北洋园",
     "url": "https://www.tjupt.org/",
     "logo": "https://www.tjupt.org/favicon.ico",
@@ -4899,12 +4955,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 66,
     "created_at": "2022-10-04 11:08:01.927000",
-    "updated_at": "2023-04-02 00:49:08.252242",
+    "updated_at": "2023-04-19 22:57:41.909976",
     "name": "UltraHD",
     "url": "https://ultrahd.net/",
     "logo": "https://ultrahd.net/favicon.ico",
@@ -4985,12 +5042,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 67,
     "created_at": "2022-10-04 11:18:37.790000",
-    "updated_at": "2023-04-02 00:49:08.257565",
+    "updated_at": "2023-04-19 22:57:41.913368",
     "name": "TU88",
     "url": "http://pt.tu88.men/",
     "logo": "http://pt.tu88.men/favicon.ico",
@@ -5071,12 +5129,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 68,
     "created_at": "2022-10-04 11:19:33.274000",
-    "updated_at": "2023-04-02 00:49:08.263929",
+    "updated_at": "2023-04-19 22:57:41.916400",
     "name": "PT分享站",
     "url": "https://pt.itzmx.com/",
     "logo": "https://pt.itzmx.com/favicon.ico",
@@ -5157,12 +5216,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 69,
     "created_at": "2022-10-11 20:56:14.504000",
-    "updated_at": "2023-04-02 00:49:08.269189",
+    "updated_at": "2023-04-19 22:57:41.919226",
     "name": "兽",
     "url": "https://pt.hd4fans.org/",
     "logo": "https://pt.hd4fans.org/favicon.ico",
@@ -5243,12 +5303,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 70,
     "created_at": "2022-07-17 10:24:59.754000",
-    "updated_at": "2023-04-02 00:49:08.276430",
+    "updated_at": "2023-04-19 22:57:41.921981",
     "name": "BT学校",
     "url": "https://pt.btschool.club/",
     "logo": "https://gitee.com/ngfchl/ptools/raw/master/static/logo/btschool.ico",
@@ -5329,12 +5390,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 71,
     "created_at": "2022-10-13 20:46:41.135391",
-    "updated_at": "2023-04-02 00:49:08.282867",
+    "updated_at": "2023-04-19 22:57:41.924740",
     "name": "GGPT",
     "url": "https://gamegamept.cn/",
     "logo": "https://gamegamept.cn/favicon.ico",
@@ -5415,12 +5477,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 72,
     "created_at": "2022-10-13 21:12:00.102150",
-    "updated_at": "2023-04-02 00:49:08.289637",
+    "updated_at": "2023-04-19 22:57:41.927449",
     "name": "飞天拉面",
     "url": "https://nextpt.net/",
     "logo": "https://nextpt.net/favicon.ico",
@@ -5501,12 +5564,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "Index",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 73,
     "created_at": "2022-10-13 22:31:26.178291",
-    "updated_at": "2023-04-02 00:49:08.297767",
+    "updated_at": "2023-04-19 22:57:41.930020",
     "name": "织梦",
     "url": "https://zmpt.cc/",
     "logo": "https://zmpt.cc/favicon.ico",
@@ -5587,12 +5651,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 74,
     "created_at": "2022-10-14 14:23:01.057107",
-    "updated_at": "2023-04-02 00:49:08.303350",
+    "updated_at": "2023-04-19 22:57:41.932703",
     "name": "52PT",
     "url": "https://52pt.site/",
     "logo": "https://52pt.site/favicon.ico",
@@ -5673,12 +5738,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 75,
     "created_at": "2022-10-14 14:25:28.692053",
-    "updated_at": "2023-04-02 00:49:08.309851",
+    "updated_at": "2023-04-19 22:57:41.935316",
     "name": "TCCF",
     "url": "https://et8.org/",
     "logo": "https://et8.org/favicon.ico",
@@ -5759,12 +5825,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 76,
     "created_at": "2022-10-15 20:49:44.721748",
-    "updated_at": "2023-04-02 00:49:08.317166",
+    "updated_at": "2023-04-19 22:57:41.937985",
     "name": "SRVFI",
     "url": "https://srvfi.top/",
     "logo": "https://srvfi.top/favicon.ico",
@@ -5845,12 +5912,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 77,
     "created_at": "2022-10-17 07:42:57.547264",
-    "updated_at": "2023-04-02 00:49:08.324524",
+    "updated_at": "2023-04-19 22:57:41.940534",
     "name": "ICC2022",
     "url": "https://www.icc2022.com/",
     "logo": "https://www.icc2022.com/favicon.ico",
@@ -5931,12 +5999,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 78,
     "created_at": "2022-10-21 18:14:12.349610",
-    "updated_at": "2023-04-02 00:49:08.350540",
+    "updated_at": "2023-04-19 22:57:41.943212",
     "name": "iHD",
     "url": "https://ihdbits.me/",
     "logo": "https://ihdbits.me/favicon.ico",
@@ -6017,12 +6086,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 79,
     "created_at": "2022-11-01 00:06:06.053113",
-    "updated_at": "2023-04-02 00:49:08.356233",
+    "updated_at": "2023-04-19 23:00:46.023195",
     "name": "红叶",
     "url": "http://leaves.red/",
     "logo": "http://leaves.red/favicon.ico",
@@ -6086,7 +6156,7 @@
     "leech_rule": "//img[@class=\"arrowdown\"]/following-sibling::text()[1]",
     "seed_rule": "//img[@class=\"arrowup\"]/following-sibling::text()[1]",
     "record_count_rule": ".//td[3]/text()",
-    "seed_vol_rule": "//p/preceding-sibling::text()[1]",
+    "seed_vol_rule": "//p/preceding-sibling::div/div/text()[1]",
     "mailbox_rule": "//a[@href=\"messages.php\"]/font[contains(text(),\"条\")]/text()[1]",
     "hash_rule": "//td/b[contains(text(),\"Hash\")]/following::text()[1]",
     "notice_rule": "//a[@href=\"index.php\"]/font[contains(text(),\"条\")]/text()[1]",
@@ -6103,12 +6173,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 81,
     "created_at": "2022-11-04 23:06:38.778550",
-    "updated_at": "2023-04-02 00:49:08.362443",
+    "updated_at": "2023-04-19 22:57:41.948500",
     "name": "龙之家",
     "url": "https://www.dragonhd.xyz/",
     "logo": "https://www.dragonhd.xyz/favicon.ico",
@@ -6189,12 +6260,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 82,
     "created_at": "2022-11-08 09:18:21.489786",
-    "updated_at": "2023-04-02 00:49:08.367988",
+    "updated_at": "2023-04-19 23:00:18.616296",
     "name": "杏林",
     "url": "https://xinglin.one/",
     "logo": "https://xinglin.one/favicon.ico",
@@ -6258,7 +6330,7 @@
     "leech_rule": "//img[@class=\"arrowdown\"]/following-sibling::text()[1]",
     "seed_rule": "//img[@class=\"arrowup\"]/following-sibling::text()[1]",
     "record_count_rule": ".//td[3]/text()",
-    "seed_vol_rule": "//p/preceding-sibling::text()[1]",
+    "seed_vol_rule": "//p/preceding-sibling::div/div/text()[1]",
     "mailbox_rule": "//a[@href=\"messages.php\"]/font[contains(text(),\"条\")]/text()[1]",
     "hash_rule": "//td/b[contains(text(),\"Hash\")]/following::text()[1]",
     "notice_rule": "//a[@href=\"index.php\"]/font[contains(text(),\"条\")]/text()[1]",
@@ -6275,12 +6347,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 83,
     "created_at": "2022-11-12 22:41:41.000351",
-    "updated_at": "2023-04-02 00:49:08.375243",
+    "updated_at": "2023-04-19 22:57:41.954275",
     "name": "Filept",
     "url": "https://www.filept.com/",
     "logo": "https://www.filept.com/favicon.ico",
@@ -6361,12 +6434,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 85,
     "created_at": "2022-11-23 17:58:52.708203",
-    "updated_at": "2023-04-02 00:49:08.380805",
+    "updated_at": "2023-04-19 22:57:41.956932",
     "name": "海豚",
     "url": "https://dicmusic.club/",
     "logo": "https://dicmusic.club/favicon.ico",
@@ -6447,12 +6521,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 86,
     "created_at": "2022-12-09 17:40:04.727545",
-    "updated_at": "2023-04-02 00:49:08.386495",
+    "updated_at": "2023-04-19 22:57:41.960328",
     "name": "Uploads",
     "url": "http://uploads.ltd/",
     "logo": "http://uploads.ltd/favicon.ico",
@@ -6533,12 +6608,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 87,
     "created_at": "2022-12-20 08:24:33.287437",
-    "updated_at": "2023-04-02 00:49:08.391776",
+    "updated_at": "2023-04-19 22:57:41.963375",
     "name": "大青虫",
     "url": "https://cyanbug.net/",
     "logo": "https://cyanbug.net/favicon.ico",
@@ -6619,12 +6695,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 89,
     "created_at": "2022-12-20 08:27:01.381014",
-    "updated_at": "2023-04-02 00:49:08.397272",
+    "updated_at": "2023-04-19 22:57:41.966646",
     "name": "鲨鱼",
     "url": "https://sharkpt.net/",
     "logo": "https://sharkpt.net/favicon.ico",
@@ -6705,12 +6782,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 92,
     "created_at": "2022-12-25 17:54:44.854475",
-    "updated_at": "2023-04-02 00:49:08.402629",
+    "updated_at": "2023-04-19 22:57:41.969634",
     "name": "莫妮卡",
     "url": "https://monikadesign.uk/",
     "logo": "https://monikadesign.uk/favicon.ico",
@@ -6791,12 +6869,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 93,
     "created_at": "2022-12-26 10:00:41.449226",
-    "updated_at": "2023-04-02 00:49:08.408169",
+    "updated_at": "2023-04-19 22:57:41.972898",
     "name": "核弹头",
     "url": "https://hd-torrents.org/",
     "logo": "https://hd-torrents.org/favicon.ico",
@@ -6877,12 +6956,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 94,
     "created_at": "2022-12-26 10:51:49.583666",
-    "updated_at": "2023-04-02 00:49:08.413623",
+    "updated_at": "2023-04-19 22:57:41.976045",
     "name": "Exoticaz",
     "url": "https://exoticaz.to/",
     "logo": "https://exoticaz.to/favicon.ico",
@@ -6963,12 +7043,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 95,
     "created_at": "2022-12-26 11:44:05.766041",
-    "updated_at": "2023-04-02 00:49:08.419071",
+    "updated_at": "2023-04-19 22:57:41.979071",
     "name": "Cinemaz",
     "url": "https://cinemaz.to/",
     "logo": "https://cinemaz.to/images/cinemaz-favicon.png",
@@ -7049,12 +7130,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 96,
     "created_at": "2022-12-26 12:12:22.433872",
-    "updated_at": "2023-04-02 00:49:08.424716",
+    "updated_at": "2023-04-19 22:57:41.982209",
     "name": "Avistaz",
     "url": "https://avistaz.to/",
     "logo": "https://avistaz.to/images/avistaz-favicon.png",
@@ -7135,12 +7217,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "/",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 97,
     "created_at": "2022-12-26 13:31:54.151043",
-    "updated_at": "2023-04-02 00:49:08.429917",
+    "updated_at": "2023-04-19 22:57:41.985278",
     "name": "Filelist",
     "url": "https://filelist.io/",
     "logo": "https://filelist.io/favicon.ico",
@@ -7221,12 +7304,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 98,
     "created_at": "2022-12-26 14:03:05.511105",
-    "updated_at": "2023-04-02 00:49:08.437600",
+    "updated_at": "2023-04-19 22:57:41.988348",
     "name": "普斯特",
     "url": "https://pt.hdpost.top/",
     "logo": "https://pt.hdpost.top/favicon.ico",
@@ -7307,12 +7391,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 99,
     "created_at": "2022-12-26 19:45:08.010450",
-    "updated_at": "2023-04-02 00:49:08.443949",
+    "updated_at": "2023-04-19 22:57:41.991183",
     "name": "朱雀",
     "url": "https://zhuque.in/",
     "logo": "https://gitee.com/ngfchl/ptools/raw/master/static/logo/zhuque.png",
@@ -7393,12 +7478,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 100,
     "created_at": "2022-12-27 12:40:22.412286",
-    "updated_at": "2023-04-02 00:49:08.466368",
+    "updated_at": "2023-04-19 22:57:41.994296",
     "name": "Oldtoons",
     "url": "https://oldtoons.world/",
     "logo": "https://oldtoons.world/favicon.ico",
@@ -7479,12 +7565,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 101,
     "created_at": "2022-12-27 12:56:12.440343",
-    "updated_at": "2023-04-02 00:49:08.474719",
+    "updated_at": "2023-04-19 22:57:41.997108",
     "name": "Reelflix",
     "url": "https://reelflix.xyz/",
     "logo": "https://reelflix.xyz/favicon.ico",
@@ -7565,12 +7652,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 102,
     "created_at": "2023-01-03 09:53:52.495825",
-    "updated_at": "2023-04-02 00:50:30.708361",
+    "updated_at": "2023-04-19 22:57:41.999950",
     "name": "2xfree",
     "url": "https://pt.2xfree.org/",
     "logo": "https://pt.2xfree.org/favicon.ico",
@@ -7651,12 +7739,13 @@
     "notice_title": "//td[@class=\"text\"]/div/a",
     "notice_content": "//td[@class=\"text\"]/div/a/following-sibling::div",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   },
   {
     "id": 103,
     "created_at": "2023-01-16 16:45:01.890366",
-    "updated_at": "2023-04-02 00:49:08.487881",
+    "updated_at": "2023-04-19 22:57:42.002671",
     "name": "蝴蝶",
     "url": "https://hudbt.hust.edu.cn/",
     "logo": "https://hudbt.hust.edu.cn/favicon.ico",
@@ -7737,6 +7826,7 @@
     "notice_title": "//div[@id=\"news\"]/ul/li/a",
     "notice_content": "//div[@id=\"news\"]/ul/li/a/following-sibling::div/div/font",
     "page_index": "index.php",
-    "publish_rule": "//p/preceding-sibling::b/text()[1]"
+    "publish_rule": "//p/preceding-sibling::b/text()[1]",
+    "identity": null
   }
 ]
