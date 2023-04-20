@@ -1993,11 +1993,13 @@ class PtSpider:
                         logger.info('做种信息字符串：{}'.format(seeding_str))
                         if ':' in seeding_str:
                             seed_vol_size = seeding_str.split(':')[-1].strip()
-                        if '：' in seeding_str:
+                        elif '：' in seeding_str:
                             seed_vol_size = seeding_str.split('：')[-1].strip()
-                        if '&nbsp;' in seeding_str:
+                        elif '&nbsp;' in seeding_str:
                             seed_vol_size = seeding_str.split('&nbsp;')[-1].strip()
-                        if 'No record' in seeding_str:
+                        # elif 'No record' in seeding_str:
+                        #     seed_vol_size = 0
+                        else:
                             seed_vol_size = 0
                         seed_vol_all = FileSizeConvert.parse_2_byte(seed_vol_size)
                 elif site.url in [
