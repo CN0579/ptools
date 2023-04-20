@@ -236,7 +236,7 @@ def exec_command(commands):
 
 
 @register_job(scheduler, 'cron', id='auto_get_upgrade', hour=2, minute=25, replace_existing=True)
-def auto_get_upgrade():
+def auto_upgrade():
     """程序更新"""
     try:
         logger.info('开始自动更新')
