@@ -273,6 +273,7 @@ def auto_get_upgrade():
 
 @register_job(scheduler, 'cron', id='auto_do_xpath', hour=2, minute=30, replace_existing=True)
 def auto_do_xpath():
+    """同步数据库"""
     try:
         logger.info('开始自动更新')
         update_commands = {
