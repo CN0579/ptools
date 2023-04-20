@@ -1980,6 +1980,7 @@ class PtSpider:
                     'http://www.oshen.win/',
                     'https://sharkpt.net/',
                     'https://pt.soulvoice.club/',
+                    'https://dajiao.cyou/',
                 ]:
                     # 获取到的是整段，需要解析
                     logger.info('做种体积：{}'.format(seed_vol_list))
