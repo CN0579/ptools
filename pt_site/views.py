@@ -12,7 +12,7 @@ import requests
 import toml
 import yaml
 from apscheduler.schedulers.background import BackgroundScheduler
-from django_apscheduler.jobstores import DjangoJobStore
+from django_apscheduler.jobstores import DjangoJobStore, register_job
 from lxml import etree
 
 from pt_site.UtilityTool import PtSpider, MessageTemplate, FileSizeConvert
@@ -235,21 +235,26 @@ def exec_command(commands):
     return result
 
 
-def auto_upgrade():
+@register_job(scheduler, 'cron', id='auto_get_upgrade', hour=2, minute=25, replace_existing=True)
+def auto_get_upgrade():
     """程序更新"""
     try:
         logger.info('开始自动更新')
         update_commands = {
             # 'cp db/db.sqlite3 db/db.sqlite3-$(date "+%Y%m%d%H%M%S")',
-            '更新依赖环境': 'wget -O requirements.txt https://gitee.com/ngfchl/ptools/raw/master/requirements.txt && pip install -r requirements.txt -U',
-            '强制覆盖本地': 'git clean -df && git reset --hard',
-            '获取更新信息': 'git fetch --all',
+            # '更新依赖环境': 'wget -O requirements.txt https://gitee.com/ngfchl/ptools/raw/master/requirements.txt && pip install -r requirements.txt -U',
+            # '强制覆盖本地': 'git clean -df && git reset --hard',
+            # '获取更新信息': 'git fetch --all',
             '拉取代码更新': f'git pull origin {os.getenv("DEV")}',
+        }
+        sync_commands = {
+            '同步数据库': 'python manage.py migrate',
         }
         logger.info('拉取最新代码')
         result = exec_command(update_commands)
         logger.info('更新完毕')
-        message = f'> 更新完成！！请在接到通知后同步数据库！{datetime.datetime.now()}'
+        result.extend(exec_command(update_commands))
+        message = f'> 更新完成！！{datetime.datetime.now()}'
         pt_spider.send_text(title='通知：程序更新', message=message)
         return CommonResponse.success(
             msg='更新成功！稍后请在接到通知后同步数据库！！',
@@ -263,9 +268,32 @@ def auto_upgrade():
         logger.error(msg)
         message = f'> <font color="red">{msg}</font>'
         pt_spider.send_text(title=msg, message=message)
-        return CommonResponse.error(
-            msg=msg
+        return CommonResponse.error(msg=msg)
+
+
+@register_job(scheduler, 'cron', id='auto_do_xpath', hour=2, minute=30, replace_existing=True)
+def auto_do_xpath():
+    try:
+        logger.info('开始自动更新')
+        update_commands = {
+            '同步数据库': 'python manage.py migrate',
+        }
+        logger.info('同步数据库')
+        result = exec_command(update_commands)
+        message = f'> 更新完成！！数据库同步完毕！{datetime.datetime.now()}'
+        logger.info(message)
+        pt_spider.send_text(title='通知：程序更新', message=message)
+        return CommonResponse.success(
+            msg=message,
+            data={'result': result}
         )
+    except Exception as e:
+        # raise
+        msg = '更新失败!{}，请尝试手动同步数据库！'.format(str(e))
+        logger.error(msg)
+        message = f'> <font color="red">{msg}</font>'
+        pt_spider.send_text(title=msg, message=message)
+        return CommonResponse.error(msg=msg)
 
 
 def auto_update_license():
