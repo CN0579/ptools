@@ -8,6 +8,7 @@ import ssl
 import threading
 import time
 import traceback
+import urllib.parse
 from datetime import datetime
 from urllib.request import urlopen
 
@@ -127,9 +128,12 @@ class PtSpider:
     def select_ad(self):
         # res = requests.get('http://api.ptools.fun/select_ad')
         ads = [
-            'PTools目前开发遇到困难，开发电脑性能不足，时常崩溃，欢迎赞助！<img src="http://img.ptools.fun/pay.png" width="100%" align="center">',
-            '为补贴开发，努力卖点农副产品，自家生纯净榨核桃油，如有需要欢迎联系我！<img src="http://img.ptools.fun/wechat.png" width="100%" align="center">',
-            '广告位招租哟，欢迎投放广告！<img src="http://img.ptools.fun/wechat.png" width="100%" align="center">',
+            'PTools目前开发遇到困难，开发电脑性能不足，时常崩溃，欢迎赞助！'
+            '<img src="http://img.ptools.fun/pay.png" width="100%" align="center">',
+            '为补贴开发，努力卖点农副产品，自家生纯净榨核桃油，如有需要欢迎联系我！'
+            '<img src="http://img.ptools.fun/wechat.png" width="100%" align="center">',
+            '广告位招租哟，欢迎投放广告！'
+            '<img src="http://img.ptools.fun/wechat.png" width="100%" align="center">',
         ]
         return random.choice(ads)
 
@@ -180,9 +184,17 @@ class PtSpider:
                     logger.info(msg)
 
                 if notify.name == PushConfig.bark_push:
-                    url = f'{notify.custom_server}{notify.corpsecret}/{title}/{message}'
-                    res = self.get_scraper().get(url=url)
-                    msg = 'bark通知{}'.format(res)
+                    res = requests.post(
+                        url=f'{notify.custom_server}push',
+                        data={
+                            'title': title,
+                            'body': message,
+                            'device_key': notify.corpsecret,
+                            'url': 'http://img.ptools.fun/pay.png',
+                            'icon': 'https://gitee.com/ngfchl/ptools/raw/master/static/logo4.png'
+                        },
+                    )
+                    msg = 'bark通知 {}'.format(res.json())
                     logger.info(msg)
 
                 if notify.name == PushConfig.iyuu_push:
