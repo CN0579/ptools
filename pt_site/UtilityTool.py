@@ -126,16 +126,11 @@ class PtSpider:
         }, delay=delay)
 
     def select_ad(self):
-        # res = requests.get('http://api.ptools.fun/select_ad')
-        ads = [
-            'PTools目前开发遇到困难，开发电脑性能不足，时常崩溃，欢迎赞助！'
-            '<img src="http://img.ptools.fun/pay.png" width="100%" align="center">',
-            '为补贴开发，努力卖点农副产品，自家生纯净榨核桃油，如有需要欢迎联系我！'
-            '<img src="http://img.ptools.fun/wechat.png" width="100%" align="center">',
-            '广告位招租哟，欢迎投放广告！'
-            '<img src="http://img.ptools.fun/wechat.png" width="100%" align="center">',
-        ]
-        return random.choice(ads)
+        res = requests.get('http://api.ptools.fun/ad')
+        if res.status_code == 200 and res.json().get('code') == 0:
+            return res.json().get('data')
+        else:
+            return ''
 
     def send_text(self, message: str, title: str = '', url: str = None):
         """通知分流"""
