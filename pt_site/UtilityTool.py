@@ -26,7 +26,7 @@ from lxml import etree
 from pypushdeer import PushDeer
 from requests import Response, ReadTimeout
 from urllib3.exceptions import NewConnectionError, ConnectTimeoutError, MaxRetryError
-from wxpusher import WxPusher
+from util.wxpusher import WxPusher
 
 from auto_pt.models import Notify, OCR
 from pt_site.models import MySite, SignIn, TorrentInfo, SiteStatus, Site
@@ -159,8 +159,9 @@ class PtSpider:
                 if notify.name == PushConfig.wxpusher_push:
                     """WxPusher通知"""
                     res = WxPusher.send_message(
+                        summary=title,
                         content=message,
-                        url=url,
+                        url='https://ptools.fun',
                         uids=notify.touser.split(','),
                         token=notify.corpsecret,
                         content_type=3,  # 1：文本，2：html，3：markdown
