@@ -8,7 +8,6 @@ import ssl
 import threading
 import time
 import traceback
-import urllib.parse
 from datetime import datetime
 from urllib.request import urlopen
 
@@ -26,12 +25,12 @@ from lxml import etree
 from pypushdeer import PushDeer
 from requests import Response, ReadTimeout
 from urllib3.exceptions import NewConnectionError, ConnectTimeoutError, MaxRetryError
-from util.wxpusher import WxPusher
 
 from auto_pt.models import Notify, OCR
 from pt_site.models import MySite, SignIn, TorrentInfo, SiteStatus, Site
 from ptools.base import TorrentBaseInfo, PushConfig, CommonResponse, StatusCodeEnum, DownloaderCategory
 from ptools.settings import BASE_DIR
+from util.wxpusher import WxPusher
 from .wechat_push import WechatPush
 
 urllib3.util.ssl_.DEFAULT_CIPHERS = 'ALL'
@@ -126,7 +125,12 @@ class PtSpider:
         }, delay=delay)
 
     def select_ad(self):
-        res = requests.get('http://api.ptools.fun/ad')
+        ad_token = self.parse_token('ad')
+        if ad_token.code == 0:
+            token = ad_token.data
+        else:
+            token = None
+        res = requests.get('http://api.ptools.fun/ad', params=token)
         if res.status_code == 200 and res.json().get('code') == 0:
             return res.json().get('data')
         else:
