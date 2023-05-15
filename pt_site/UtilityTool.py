@@ -165,7 +165,7 @@ class PtSpider:
                     res = WxPusher.send_message(
                         summary=title,
                         content=message,
-                        url='https://ptools.fun',
+                        # url='https://ptools.fun',
                         uids=notify.touser.split(','),
                         token=notify.corpsecret,
                         content_type=3,  # 1：文本，2：html，3：markdown
