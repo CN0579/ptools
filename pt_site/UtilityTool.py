@@ -190,7 +190,7 @@ class PtSpider:
                             'title': title,
                             'body': message,
                             'device_key': notify.corpsecret,
-                            'url': 'http://img.ptools.fun/pay.png',
+                            # 'url': 'http://img.ptools.fun/pay.png',
                             'icon': 'https://gitee.com/ngfchl/ptools/raw/master/static/logo4.png'
                         },
                     )
