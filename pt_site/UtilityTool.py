@@ -1843,7 +1843,7 @@ class PtSpider:
                         notice_str = seeding_response.get("notifications").get("notifications")
                         my_site.mail = int(mail_str) + int(notice_str)
                         if my_site.mail > 0:
-                            title = f'{site.name} 有{my_site.mail}条新短消息，请注意及时查收！'
+                            title = f'{site.name}有{my_site.mail}条新短消息！'
                             msg = f'### <font color="red">{title}</font>  \n'
                             # 测试发送网站消息原内容
                             self.send_text(title=title, message=msg)
@@ -1901,7 +1901,7 @@ class PtSpider:
                                 'sp_hour': sp_hour,
                             })
                         if float(ratio) < 1:
-                            msg = f'{site.name} 分享率 {ratio} 过低，请注意'
+                            msg = f'{site.name} 分享率 {ratio} 过低！'
                             self.send_text(title=msg, message=msg)
                         return CommonResponse.success(data=res_gpw)
                     else:
@@ -1947,10 +1947,10 @@ class PtSpider:
                             'seed_vol': seeding_size,
                         })
                     if my_site.mail > 0:
-                        msg = f'{site.name} 有{my_site.mail}条新消息，请注意查收！'
+                        msg = f'{site.name}有{my_site.mail}条新消息！'
                         self.send_text(title=msg, message=msg)
                     if float(ratio) < 1:
-                        msg = f'{site.name} 分享率 {ratio} 过低，请注意'
+                        msg = f'{site.name} 分享率{ratio} 过低！'
                         self.send_text(title=msg, message=msg)
                     return CommonResponse.success(data=res_gpw)
                 except Exception as e:
@@ -2383,7 +2383,7 @@ class PtSpider:
                         else:
                             mail = mail_count + notice_count
                         my_site.mail = mail
-                        title = f'{site.name} 有{mail}条新消息，请注意及时查收！'
+                        title = f'{site.name}有{mail}条新消息！'
                         self.send_text(title=title, message=message_list)
                     else:
                         my_site.mail = 0
